@@ -1,0 +1,19 @@
+@charset "UTF-8"
+    
+{box-sizing: border-box;}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 20px;
+}
+
+.box {
+    border: rgb(85,85,85);
+    border-radius: 5px;
+    background-color: aqua;
+    padding: 1em;
+    color: #000;
+    font-size: 120%
+}
