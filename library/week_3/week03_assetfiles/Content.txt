@@ -1,0 +1,20 @@
+Layout01 Content:
+ContentCSS is getting a set of entirely new properties that, when used together, allow you to define grids for your web content to go onto. These properties are defined in the CSS Grid Layout specification.				CSS hasn’t particularly been known for its ability to handle complex layouts. Although this may not have been a problem when CSS first came out, it has evolved to be a pretty common one over the years, as all sorts of complex layouts couldn’t be easily implemented. People have been very creative at getting around the lack of support by using floats or absolute positioning and a variety of CSS layout frameworks emerged.
+
+So it’s about time CSS got some proper layout solutions to support today’s use cases.
+
+
+https://hacks.mozilla.org/2015/09/the-future-of-layout-with-css-grid-layouts/
+
+Link to this article
+
+
+Layout02 Content:
+
+Author Steve Krug
+
+Don’t Make Me Think is the title of a book by the HCI and Usability engineer Steve Krug. It teaches UX designers how to deliver great user experiences in a very simple and accessible way. Since its release in the year 2000 it has become one of the defining texts in the industry and an invaluable guide to UX professionals around the world.
+
+Don’t Make Me Think was written by Steve Krug to help people think like usability experts do. It was designed to be short, concise and very much to the point. The idea being that if it can be read in less than 2 hours and covers all the most important concepts of usability; it would be much easier to get people who don’t normally have responsibility for UX to get on board with the ideas and to promote them from within their organizations.
+
+
