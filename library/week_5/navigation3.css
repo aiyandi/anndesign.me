@@ -86,7 +86,7 @@ ul {
     background-color: #0099cc;
     
 }
-.menu li:active {
+.menu li.active {
     background-color: #ccc;
     
 }

@@ -80,7 +80,6 @@ body {
     background-color: #0099cc;
     
 }
-.menu li:active {
+.menu .active {
     background-color: #ccc;
-    
 }
