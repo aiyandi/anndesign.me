@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Week 06 Demo Website</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="box a"><h1>Pet Rescue Alliance</h1></div>
+            <div class="menu">
+                <ul>
+                    <li class="nav"><a href="index.html">Home</a></li>
+                    <li class="nav"><a href="about.html">About</a></li>
+                    <li class="active"><a href="dogs.html">Dogs</a></li>
+                    <li class="nav"><a href="volunteer.html">Volunteer</a></li>
+                    <li class="nav"><a href="newsletter.html">Newsletter</a></li>
+                    <li class="nav"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="content_dogs">
+                <p class="ogtitle">Therapy Dogs</p>
+                
+                <iframe src="https://player.vimeo.com/video/122007070" width="960" height="540" frameborder="0"></iframe>
+                
+                <p><a href="https://vimeo.com/122007070">Pet Therapy</a> from <a href="https://vimeo.com/catherineorchard">Catherine Orchard</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+            </div>
+            <div class="sidebar_dogs">
+            </div>
+            <div class="box d">
+                © Pet Rescue Alliance <span class="slash">/</span> 000.000.0000 <span class="slash">/</span> 000 Main Street, Champaign, IL 00000 <span class="slash">/</span><a href="#">email@petrescuealliance.org</a>
+            </div>
+        </div>
+        <script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+
+				}
+				x[slideIndex-1].style.display = "block";  
+			}
+		</script>
+    </body>
+</html>

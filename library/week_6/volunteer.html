@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Week 06 Demo Website</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="box a"><h1>Pet Rescue Alliance</h1></div>
+            <div class="menu">
+                <ul>
+                    <li class="nav"><a href="index.html">Home</a></li>
+                    <li class="nav"><a href="about.html">About</a></li>
+                    <li class="nav"><a href="dogs.html">Dogs</a></li>
+                    <li class="active"><a href="volunteer.html">Volunteer</a></li>
+                    <li class="nav"><a href="newsletter.html">Newsletter</a></li>
+                    <li class="nav"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="content_volunteer">
+                <p class="ogtitle">Volunteer</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla posuere sollicitudin aliquam ultrices. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Cursus metus aliquam eleifend mi in nulla. Integer vitae justo eget magna fermentum iaculis eu non diam. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. In est ante in nibh. Maecenas sed enim ut sem. Sit amet tellus cras adipiscing enim eu turpis egestas pretium. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Fames ac turpis egestas maecenas pharetra convallis posuere. Quis lectus nulla at volutpat diam ut venenatis tellus.</p>
+                <ul>
+                <li>Pharetra magna ac placerat vestibulum lectus mauris ultrices eros in. Ut ornare lectus sit amet est placerat in egestas erat. Quis enim lobortis scelerisque fermentum.</li>
+                
+                <li>Semper risus in hendrerit gravida rutrum quisque non tellus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Sem fringilla ut morbi tincidunt augue interdum velit. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Sit amet mauris commodo quis imperdiet massa tincidunt.</li>
+                
+                <li>Malesuada fames ac turpis egestas sed tempus. Aliquet porttitor lacus luctus accumsan tortor. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Faucibus scelerisque eleifend donec pretium vulputate sapien nec. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Sodales ut etiam sit amet nisl purus in mollis.</li>
+                </ul>
+                <p>Turpis egestas pretium aenean pharetra. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Duis at tellus at urna condimentum. Pharetra vel turpis nunc eget lorem. Sed risus ultricies tristique nulla aliquet enim tortor at auctor. Nibh sit amet commodo nulla facilisi nullam vehicula. Mi quis hendrerit dolor magna eget est. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare.</p>
+            </div>
+            <div class="sidebar_volunteer">
+                <img src="images/buddy.jpg">
+                <h2>“Any glimpse into the life of an animal quickens our own and makes it so much the larger and better in every way.”</h2>
+                <p>– John Muir</p>
+            </div>
+            <div class="box d">© Pet Rescue Alliance <span class="slash">/</span> 000.000.0000 <span class="slash">/</span> 000 Main Street, Champaign, IL 00000 <span class="slash">/</span><a href="#">email@petrescuealliance.org</a> </div>
+        </div>
+        <script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+
+				}
+				x[slideIndex-1].style.display = "block";  
+			}
+		</script>
+    </body>
+</html>

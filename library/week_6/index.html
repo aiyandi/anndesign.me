@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Week 06 Demo Website</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="box a"><h1>Pet Rescue Alliance</h1></div>
+            <div class="menu">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="nav"><a href="about.html">About</a></li>
+                    <li class="nav"><a href="dogs.html">Dogs</a></li>
+                    <li class="nav"><a href="volunteer.html">Volunteer</a></li>
+                    <li class="nav"><a href="newsletter.html">Newsletter</a></li>
+                    <li class="nav"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="box c">
+                <div class="box e">
+                    <div class="box f">
+                        <h3>Would you like to foster a dog?</h3>
+                        <p>Foster parents and families form the backbone of the work we do. We can only exist as a rescue if people continue to be willing to bring needy animals into their homes while we search for their permanent homes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div id="slideshow">
+	               <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+	               <button class="right" onclick="plusDivs(1)">&#10095;</button>
+	               <img class="mySlides" src="images/01.jpg" width="715px">
+	               <img class="mySlides" src="images/02.jpg" width="715px">
+	               <img class="mySlides" src="images/03.jpg" width="715px">
+                </div>
+                <strong>Where do we find our dogs?</strong>
+                <p>Pet adoption usually refers to the process of taking guardianship of and responsibility for a pet that a previous owner has abandoned or released to a shelter or rescue organization. Common sources for adoptable pets are:</p>
+                <ul>
+                    <li>Animal shelters, in the case of dogs also known as dog pounds</li>
+                    <li>Pets found loose or stray without identification, and which are unclaimed by any owner</li>
+                    <li>Advertisements placed by individuals trying to find a new home for their pet</li>
+                    <li>Pets that have been abused or neglected and have been confiscated from the offending owner.</li>
+                </ul>
+                <p>Dogs adopted from shelters are often referred to as shelter dogs or pound puppies; dogs adopted from rescue organizations are often called rescued dogs or rescue dogs.</p>
+            </div>
+            <div class="sidebar">
+                <h2>“Any glimpse into the life of an animal quickens our own and makes it so much the larger and better in every way.”</h2>
+                <p>- John Muir</p>
+                <img src="images/buddy.jpg">
+            </div>
+            <div class="box d">© Pet Rescue Alliance <span class="slash">/</span>000.000.0000<span class="slash">/</span>000 Main Street, Champaign, IL 00000 <span class="slash">/</span><a href="#">email@petrescuealliance.org</a>
+            </div>
+        </div>
+        <script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+
+				}
+				x[slideIndex-1].style.display = "block";  
+			}
+		</script>
+    </body>
+</html>

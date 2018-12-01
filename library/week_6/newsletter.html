@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Week 06 Demo Website</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="box a"><h1>Pet Rescue Alliance</h1></div>
+            <div class="menu">
+                <ul>
+                    <li class="nav"><a href="index.html">Home</a></li>
+                    <li class="nav"><a href="about.html">About</a></li>
+                    <li class="nav"><a href="dogs.html">Dogs</a></li>
+                    <li class="nav"><a href="volunteer.html">Volunteer</a></li>
+                    <li class="active"><a href="newsletter.html">Newsletter</a></li>
+                    <li class="nav"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="content_newsletter">
+                <img src="images/anigif_enhanced-16345-1462296280-2.gif">
+                <p class="ogtitle">Watch for our newsletter starting soon!</p>
+            </div>
+            <div class="sidebar_newsletter">
+                <img src="images/03.jpg">
+            </div>
+            <div class="box d">
+                © Pet Rescue Alliance <span class="slash">/</span> 000.000.0000 <span class="slash">/</span> 000 Main Street, Champaign, IL 00000 <span class="slash">/</span><a href="#">email@petrescuealliance.org</a>
+            </div>
+        </div>
+        <script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+
+				}
+				x[slideIndex-1].style.display = "block";  
+			}
+		</script>
+    </body>
+</html>

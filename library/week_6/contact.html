@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Week 06 Demo Website</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="box a"><h1>Pet Rescue Alliance</h1></div>
+            <div class="menu">
+                <ul>
+                    <li class="nav"><a href="index.html">Home</a></li>
+                    <li class="nav"><a href="about.html">About</a></li>
+                    <li class="nav"><a href="dogs.html">Dogs</a></li>
+                    <li class="nav"><a href="volunteer.html">Volunteer</a></li>
+                    <li class="nav"><a href="newsletter.html">Newsletter</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="content_contact">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.8098499891785!2d-88.22935018459125!3d40.10195227940299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880cd724a92655e9%3A0xa53c0525046826fa!2sUniversity+of+Illinois+at+Urbana-Champaign!5e0!3m2!1sen!2sus!4v1512499900342" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                
+                <p><strong>Phone:</strong> 000.000.0000</p>
+                <p><strong>Address:</strong> 000 Main Street, Anywhere, USA 00000</p>
+                <p><strong>Email:</strong> firstlastname@pra.com</p>
+            </div>
+            <div class="sidebar_contact">
+            </div>
+            <div class="box d">
+                © Pet Rescue Alliance <span class="slash">/</span> 000.000.0000 <span class="slash">/</span> 000 Main Street, Champaign, IL 00000 <span class="slash">/</span><a href="#">email@petrescuealliance.org</a>
+            </div>
+        </div>
+        <script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+
+				}
+				x[slideIndex-1].style.display = "block";  
+			}
+		</script>
+    </body>
+</html>
