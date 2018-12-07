@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Chef Site</title>
+		<link href="chefstyle.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="col_one">
+				<img src="images/chef.jpg" alt="" width="188" height="191" id="logo"/>
+				<nav>
+					<div class="nav"><a href="#slideshow">Home</a></div>
+					<div class="nav"><a href="#pizza" class="navcontent">Pizza</a></div>
+					<div class="nav"><a href="#tacos" class="navcontent">Tacos</a></div>
+					<div class="nav"><a href="#entertain" class="navcontent">Entertainment</a></div>
+					<div class="nav"><a href="#holiday" class="navcontent">Holiday</a></div>
+					<div id="socialmedia"> 
+						<a href="#"><img src="images/fb.gif" alt="" width="20" height="20" id="fb"/></a>
+						<a href="#"><img src="images/twitter.gif" alt="" width="20" height="20" id="tw"/></a>
+						<a href="#"><img src="images/youtube.gif" alt="" width="20" height="20" id="yt"/></a>
+						<a href="#"><img src="images/linkedin.gif" alt="" width="20" height="20" id="ln"/></a>
+					</div>
+				</nav>
+			</div>
+			<div class="col_two">  
+				<div id="slideshow">
+					<button class="left" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="right" onclick="plusDivs(1)">&#10095;</button>
+					<img class="mySlides" src="images/01.jpg" width="715px">
+					<img class="mySlides" src="images/03.jpg" width="715px">
+					<img class="mySlides" src="images/02.jpg" width="715px">
+				</div>
+				<div class="content">
+					Fiber is a substance in plants. Dietary fiber is the kind you eat. It's a type of carbohydrate. You may also see it listed on a food label as soluble fiber or insoluble fiber.
+				</div>
+				<div class="parallax" id="pizza"></div>
+				<div class="content">
+					Protein is in every cell in the body. Our bodies need protein from the foods we eat to build and maintain bones, muscles and skin. Find more information on foods that provide protein.
+				</div>
+				<div><img class="image" id="tacos" src="images/05.jpg"></div>
+				<div class="content">
+					Fat is a type of nutrient. You need some fat in your diet but not too much. Fats give you energy and help your body absorb vitamins. Learn more about the different types of fat here.
+				</div>
+				<div><img class="image" id="entertain" src="images/09.jpg"></div>	
+				<div class="content">
+					Carbohydrates are one of the main types of nutrients, and are an important source of energy for your body. Read more about the food sources, and function of carbohydrates.
+				</div>
+				<div><img class="image" id="holiday" src="images/07.jpg"></div>	
+				<div class="content">
+					Learn more about salt and sodium in your diet and how it affects your health. Find resources and tips for reducing the amount in your diet, yet keeping the flavor.
+				</div>
+			</div>
+		</div>
+		<!-- slidewhow script -->
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+
+				}
+				x[slideIndex-1].style.display = "block";  
+			}
+		</script>
+	</body>
+</html>

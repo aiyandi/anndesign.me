@@ -1,0 +1,16 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Fiber is a substance in plants. Dietary fiber is the kind you eat. It's a type of carbohydrate. You may also see it listed on a food label as soluble fiber or insoluble fiber.\
+\
+Protein is in every cell in the body. Our bodies need protein from the foods we eat to build and maintain bones, muscles and skin. Find more information on foods that provide protein.\
+\
+Fat is a type of nutrient. You need some fat in your diet but not too much. Fats give you energy and help your body absorb vitamins. Learn more about the different types of fat here.\
+\
+Carbohydrates are one of the main types of nutrients, and are an important source of energy for your body. Read more about the food sources, and function of carbohydrates.\
+\
+Learn more about salt and sodium in your diet and how it affects your health. Find resources and tips for reducing the amount in your diet, yet keeping the flavor.}
