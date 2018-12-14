@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <title>ur@anndesign</title>
+    </head>
+    <body class="body2">
+        <div class="margins">
+            <div class="wrapper">
+                <div class="box a header"><h4>/anndesign.</h4></div>
+                    <div class="menu header">
+                            <ul>
+                                <li class="nav"><a href="index.html"><p1>home</p1></a></li>
+                                <li class="nav"><a href="work.html"><p1>work</p1></a></li>
+                                <li class="nav"><a href="about.html"><p1>about</p1></a></li>
+                                <li class="nav"><a href="inspiration.html"><p1>inspiration</p1></a></li>
+                                <li class="active"><a href="contact.html"><p1>contact</p1></a></li>
+                            </ul>
+                        </div>
+                    <div class="content_contact">
+                        <br/><br/><h5>CONTACT</h5>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.8098499891785!2d-88.22935018459125!3d40.10195227940299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880cd724a92655e9%3A0xa53c0525046826fa!2sUniversity+of+Illinois+at+Urbana-Champaign!5e0!3m2!1sen!2sus!4v1512499900342" width="800" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                        <p>telephone: 000.000.0000</p>
+                        <p>email: aiyandi.07@gmail.com</p>
+                        <p>address: </p>
+                    </div>
+                    <div class="d_work">
+                    <p1>© anndesign</p1><span class="slash">/</span><p1>000.000.0000</p1><span class="slash">/</span><a href="library/index.html"><p1>Course Library</p1></a><span class="slash">/</span><a href="mailto:aiyandi.07@gmail.com"><p1>Email</p1></a>
+                </div>
+                </div>
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+
+                    }
+                    x[slideIndex-1].style.display = "block";  
+                }
+            </script>
+        </div>
+    </body>
+</html>
