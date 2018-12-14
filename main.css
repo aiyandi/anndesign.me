@@ -9,16 +9,17 @@ body {
 }
 
 .margins {
-    margin-left: 150px;
-    margin-right: 150px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: "baskerville"
 }
 .wrapper {
     display: grid;
     grid-template-columns: repeat(4, [col] 1fr);
-    grid-template-rows: repeat(5, [row] 1fr);
+    grid-template-rows: repeat(3, [col] 1fr);
     background-color: none;
-    color: #444;
+    color: none;
     padding: 0px;
 }
 .box {
@@ -28,8 +29,8 @@ body {
     padding: 0px;
     padding-top: 5px;
     grid-column: 1;
-    grid-row: row;
-    font-family: "gotham bold"
+    grid-row: 1;
+    font-family: "gotham bold", sans-serif;
 }
 .menu {
     grid-column: 3/ span 4;
@@ -38,6 +39,10 @@ body {
     background-color: none;
     font-family: sans-serif;
 }
+.header {
+    position: sticky;
+    top: 0;
+}
 .b {
     grid-column: 1/ span 4;
     grid-row: 3;
@@ -45,33 +50,33 @@ body {
 }
 .c {
     grid-column: 2/4;
+    grid-row: 2;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+a {
+    color: #048fa3;
 }
 
 .d {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: none;
     color: #fff;
     text-align: center;
     padding: 20px;
     width: 100%;
+    line-height: 12pt;
+    font-size: 10pt;
+    font-family: "gotham", sans-serif
+}
+.footer {
     position: fixed;
     left: -8px;
     bottom: 0;
-}
-.e {
-    grid-column: 1/ span 4;
-    grid-row: ;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    height: 65%;
-    padding: 0px;
-}
-.f {
-    grid-column: 1;
-    grid-row: 1;
-    color: black;
-    text-align: left;
-    padding: 20px;
 }
 .content {
     grid-column: col /span 3;
@@ -168,31 +173,31 @@ body {
 }
 .menu li a {
     text-decoration: none;
-    color: #048fa3;	
-    font-family: "gotham";
+    color: white;	
+    font-family: "gotham", sans-serif;
 }
 .menu li:hover {
-    background-color: whitesmoke;
+    background-color: #048fa3;
 }
 .menu .active {
-    background-color: white;
+    background-color: #048fa3;
     
 }
 
 /* Content Styles */
 
 h1 {
-    color: #3497d1;
+    color: white;
     font-size: 40pt;
     margin-top: 20px;
     margin-bottom: 20px;
-    text-align: left;
-    font-family: "gotham bold";
+    text-align: auto;
+    font-family: "gotham bold", sans-serif;
 }
 h2 {
     color: #3399cc;
     font-size: 21pt;
-    font-family: "palatino";
+    font-family: "gotham", sans-serif;
 }
 h3 {
     color: black;
@@ -202,7 +207,7 @@ h4 {
     background-color: none;
     padding: 20px;
     margin: 0px;
-    color: #048fa3;
+    color: white;
     font-size: 20pt;
 }
 h5 {
@@ -214,7 +219,10 @@ h5 {
     padding-right: 10px;
 }
 p {
-    font-size: 12pt;
+    line-height: 18pt;
+    padding: 8px;
+    font-family: "gotham", sans-serif;
+    font-size: 14pt;
 }
 .ogtitle {
     color: #ff6501;
