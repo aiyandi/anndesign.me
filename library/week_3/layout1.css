@@ -1,11 +1,10 @@
-@charset "UTF_8"
+@charset"UTF_8"
 
 {box-sizing: border-box}
 
 body {
     margin: 40px;
 }
-
 .wrapper {
     display: grid;
     width: 90%;
